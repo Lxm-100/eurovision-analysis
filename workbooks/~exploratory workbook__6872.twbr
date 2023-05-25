@@ -1,0 +1,1227 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20231.23.0310.1044                               -->
+<workbook original-version='18.1' source-build='2023.1.0 (20231.23.0310.1044)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='contestants_clean2' inline='true' name='federated.1c59zf10riugal1ev845t1j6vjtm' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='contestants_clean2' name='textscan.10z75va1nprsie13bvt8j069l62x'>
+            <connection class='textscan' directory='Data/data' filename='contestants_clean2.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='votes' name='textscan.1m0ev190fk03j21d5gcza1p36pym'>
+            <connection class='textscan' directory='Data/GitHub/final_project/eurovision-analysis/data' filename='votes.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation join='inner' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[contestants_clean2.csv].[to_country]' />
+              <expression op='[votes.csv].[to_country]' />
+            </expression>
+          </clause>
+          <relation connection='textscan.10z75va1nprsie13bvt8j069l62x' name='contestants_clean2.csv' table='[contestants_clean2#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='date' date-parse-format='yyyy' name='year' ordinal='0' />
+              <column datatype='string' name='to_country_id' ordinal='1' />
+              <column datatype='string' name='to_country' ordinal='2' />
+              <column datatype='string' name='performer' ordinal='3' />
+              <column datatype='string' name='song' ordinal='4' />
+              <column datatype='integer' name='place_contest' ordinal='5' />
+              <column datatype='integer' name='running_final' ordinal='6' />
+              <column datatype='integer' name='place_final' ordinal='7' />
+              <column datatype='integer' name='points_final' ordinal='8' />
+              <column datatype='integer' name='points_tele_final' ordinal='9' />
+              <column datatype='integer' name='points_jury_final' ordinal='10' />
+              <column datatype='string' name='lyrics' ordinal='11' />
+              <column datatype='string' name='youtube_url' ordinal='12' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1m0ev190fk03j21d5gcza1p36pym' name='votes.csv' table='[votes#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_DE'>
+              <column datatype='integer' name='year' ordinal='0' />
+              <column datatype='string' name='round' ordinal='1' />
+              <column datatype='string' name='from_country_id' ordinal='2' />
+              <column datatype='string' name='to_country_id' ordinal='3' />
+              <column datatype='string' name='from_country' ordinal='4' />
+              <column datatype='string' name='to_country' ordinal='5' />
+              <column datatype='integer' name='total_points' ordinal='6' />
+              <column datatype='string' name='tele_points' ordinal='7' />
+              <column datatype='integer' name='jury_points' ordinal='8' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation join='inner' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[contestants_clean2.csv].[to_country]' />
+              <expression op='[votes.csv].[to_country]' />
+            </expression>
+          </clause>
+          <relation connection='textscan.10z75va1nprsie13bvt8j069l62x' name='contestants_clean2.csv' table='[contestants_clean2#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='date' date-parse-format='yyyy' name='year' ordinal='0' />
+              <column datatype='string' name='to_country_id' ordinal='1' />
+              <column datatype='string' name='to_country' ordinal='2' />
+              <column datatype='string' name='performer' ordinal='3' />
+              <column datatype='string' name='song' ordinal='4' />
+              <column datatype='integer' name='place_contest' ordinal='5' />
+              <column datatype='integer' name='running_final' ordinal='6' />
+              <column datatype='integer' name='place_final' ordinal='7' />
+              <column datatype='integer' name='points_final' ordinal='8' />
+              <column datatype='integer' name='points_tele_final' ordinal='9' />
+              <column datatype='integer' name='points_jury_final' ordinal='10' />
+              <column datatype='string' name='lyrics' ordinal='11' />
+              <column datatype='string' name='youtube_url' ordinal='12' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1m0ev190fk03j21d5gcza1p36pym' name='votes.csv' table='[votes#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_DE'>
+              <column datatype='integer' name='year' ordinal='0' />
+              <column datatype='string' name='round' ordinal='1' />
+              <column datatype='string' name='from_country_id' ordinal='2' />
+              <column datatype='string' name='to_country_id' ordinal='3' />
+              <column datatype='string' name='from_country' ordinal='4' />
+              <column datatype='string' name='to_country' ordinal='5' />
+              <column datatype='integer' name='total_points' ordinal='6' />
+              <column datatype='string' name='tele_points' ordinal='7' />
+              <column datatype='integer' name='jury_points' ordinal='8' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[from_country]' value='[votes.csv].[from_country]' />
+          <map key='[from_country_id]' value='[votes.csv].[from_country_id]' />
+          <map key='[jury_points]' value='[votes.csv].[jury_points]' />
+          <map key='[lyrics]' value='[contestants_clean2.csv].[lyrics]' />
+          <map key='[performer]' value='[contestants_clean2.csv].[performer]' />
+          <map key='[place_contest]' value='[contestants_clean2.csv].[place_contest]' />
+          <map key='[place_final]' value='[contestants_clean2.csv].[place_final]' />
+          <map key='[points_final]' value='[contestants_clean2.csv].[points_final]' />
+          <map key='[points_jury_final]' value='[contestants_clean2.csv].[points_jury_final]' />
+          <map key='[points_tele_final]' value='[contestants_clean2.csv].[points_tele_final]' />
+          <map key='[round]' value='[votes.csv].[round]' />
+          <map key='[running_final]' value='[contestants_clean2.csv].[running_final]' />
+          <map key='[song]' value='[contestants_clean2.csv].[song]' />
+          <map key='[tele_points]' value='[votes.csv].[tele_points]' />
+          <map key='[to_country (votes.csv)]' value='[votes.csv].[to_country]' />
+          <map key='[to_country]' value='[contestants_clean2.csv].[to_country]' />
+          <map key='[to_country_id (votes.csv)]' value='[votes.csv].[to_country_id]' />
+          <map key='[to_country_id]' value='[contestants_clean2.csv].[to_country_id]' />
+          <map key='[total_points]' value='[votes.csv].[total_points]' />
+          <map key='[year (votes.csv)]' value='[votes.csv].[year]' />
+          <map key='[year]' value='[contestants_clean2.csv].[year]' />
+          <map key='[youtube_url]' value='[contestants_clean2.csv].[youtube_url]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[contestants_clean2.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[votes.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_DE&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[contestants_clean2.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[contestants_clean2.csv_7609919A90C6444C89E72EF90FB71D75]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>to_country_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[to_country_id]</local-name>
+            <parent-name>[contestants_clean2.csv]</parent-name>
+            <remote-alias>to_country_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[contestants_clean2.csv_7609919A90C6444C89E72EF90FB71D75]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>to_country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[to_country]</local-name>
+            <parent-name>[contestants_clean2.csv]</parent-name>
+            <remote-alias>to_country</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[contestants_clean2.csv_7609919A90C6444C89E72EF90FB71D75]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>performer</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[performer]</local-name>
+            <parent-name>[contestants_clean2.csv]</parent-name>
+            <remote-alias>performer</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[contestants_clean2.csv_7609919A90C6444C89E72EF90FB71D75]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>song</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[song]</local-name>
+            <parent-name>[contestants_clean2.csv]</parent-name>
+            <remote-alias>song</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[contestants_clean2.csv_7609919A90C6444C89E72EF90FB71D75]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>place_contest</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[place_contest]</local-name>
+            <parent-name>[contestants_clean2.csv]</parent-name>
+            <remote-alias>place_contest</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[contestants_clean2.csv_7609919A90C6444C89E72EF90FB71D75]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>running_final</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[running_final]</local-name>
+            <parent-name>[contestants_clean2.csv]</parent-name>
+            <remote-alias>running_final</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[contestants_clean2.csv_7609919A90C6444C89E72EF90FB71D75]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>place_final</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[place_final]</local-name>
+            <parent-name>[contestants_clean2.csv]</parent-name>
+            <remote-alias>place_final</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[contestants_clean2.csv_7609919A90C6444C89E72EF90FB71D75]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>points_final</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[points_final]</local-name>
+            <parent-name>[contestants_clean2.csv]</parent-name>
+            <remote-alias>points_final</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[contestants_clean2.csv_7609919A90C6444C89E72EF90FB71D75]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>points_tele_final</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[points_tele_final]</local-name>
+            <parent-name>[contestants_clean2.csv]</parent-name>
+            <remote-alias>points_tele_final</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[contestants_clean2.csv_7609919A90C6444C89E72EF90FB71D75]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>points_jury_final</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[points_jury_final]</local-name>
+            <parent-name>[contestants_clean2.csv]</parent-name>
+            <remote-alias>points_jury_final</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[contestants_clean2.csv_7609919A90C6444C89E72EF90FB71D75]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lyrics</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[lyrics]</local-name>
+            <parent-name>[contestants_clean2.csv]</parent-name>
+            <remote-alias>lyrics</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[contestants_clean2.csv_7609919A90C6444C89E72EF90FB71D75]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>youtube_url</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[youtube_url]</local-name>
+            <parent-name>[contestants_clean2.csv]</parent-name>
+            <remote-alias>youtube_url</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[contestants_clean2.csv_7609919A90C6444C89E72EF90FB71D75]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year (votes.csv)]</local-name>
+            <parent-name>[votes.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[contestants_clean2.csv_7609919A90C6444C89E72EF90FB71D75]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>round</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[round]</local-name>
+            <parent-name>[votes.csv]</parent-name>
+            <remote-alias>round</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[contestants_clean2.csv_7609919A90C6444C89E72EF90FB71D75]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>from_country_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[from_country_id]</local-name>
+            <parent-name>[votes.csv]</parent-name>
+            <remote-alias>from_country_id</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[contestants_clean2.csv_7609919A90C6444C89E72EF90FB71D75]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>to_country_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[to_country_id (votes.csv)]</local-name>
+            <parent-name>[votes.csv]</parent-name>
+            <remote-alias>to_country_id</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[contestants_clean2.csv_7609919A90C6444C89E72EF90FB71D75]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>from_country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[from_country]</local-name>
+            <parent-name>[votes.csv]</parent-name>
+            <remote-alias>from_country</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[contestants_clean2.csv_7609919A90C6444C89E72EF90FB71D75]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>to_country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[to_country (votes.csv)]</local-name>
+            <parent-name>[votes.csv]</parent-name>
+            <remote-alias>to_country</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[contestants_clean2.csv_7609919A90C6444C89E72EF90FB71D75]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_points</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_points]</local-name>
+            <parent-name>[votes.csv]</parent-name>
+            <remote-alias>total_points</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[contestants_clean2.csv_7609919A90C6444C89E72EF90FB71D75]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tele_points</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tele_points]</local-name>
+            <parent-name>[votes.csv]</parent-name>
+            <remote-alias>tele_points</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[contestants_clean2.csv_7609919A90C6444C89E72EF90FB71D75]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>jury_points</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[jury_points]</local-name>
+            <parent-name>[votes.csv]</parent-name>
+            <remote-alias>jury_points</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[contestants_clean2.csv_7609919A90C6444C89E72EF90FB71D75]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='contestants_clean2.csv' datatype='table' name='[__tableau_internal_object_id__].[contestants_clean2.csv_7609919A90C6444C89E72EF90FB71D75]' role='measure' type='quantitative' />
+      <column caption='From Country' datatype='string' name='[from_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='From Country Id' datatype='string' name='[from_country_id]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Jury Points' datatype='integer' name='[jury_points]' role='measure' type='quantitative' />
+      <column caption='Round' datatype='string' name='[round]' role='dimension' type='nominal' />
+      <column caption='Tele Points' datatype='string' name='[tele_points]' role='dimension' type='nominal' />
+      <column caption='To Country (Votes.Csv)' datatype='string' name='[to_country (votes.csv)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' name='[to_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='To Country Id (Votes.Csv)' datatype='string' name='[to_country_id (votes.csv)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' name='[to_country_id]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Total Points' datatype='integer' name='[total_points]' role='measure' type='quantitative' />
+      <column caption='Year (Votes.Csv)' datatype='integer' name='[year (votes.csv)]' role='dimension' type='quantitative' />
+      <column-instance column='[to_country]' derivation='None' name='[none:to_country:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:to_country:nk]' palette='color_blind_10_0' type='palette'>
+            <map to='#1170aa'>
+              <bucket>&quot;Germany&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Bulgaria&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Moldova&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Ukraine&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Albania&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Iceland&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Serbia&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Azerbaijan&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Latvia&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Denmark&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Netherlands&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Croatia&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Monaco&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;United Kingdom&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Belarus&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Lithuania&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Greece&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Russia&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Armenia&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Ireland&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Serbia &amp; Montenegro&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Georgia&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Portugal&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Belgium&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Luxembourg&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Switzerland&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Estonia&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;North Macedonia&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Finland&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Norway&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Romania&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Hungary&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;San Marino&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Cyprus&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Montenegro&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Yugoslavia&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Bosnia &amp; Herzegovina&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Malta&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Turkey&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Australia&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Israel&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Slovakia&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;France&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Poland&quot;</bucket>
+            </map>
+            <map to='#fc7d0b'>
+              <bucket>&quot;Spain&quot;</bucket>
+            </map>
+            <map to='#fc7d0b'>
+              <bucket>&quot;Sweden&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Czechia&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Morocco&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Austria&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Italy&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Slovenia&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Germany&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='contestants_clean2.csv' id='contestants_clean2.csv_7609919A90C6444C89E72EF90FB71D75'>
+            <properties context=''>
+              <relation join='inner' type='join'>
+                <clause type='join'>
+                  <expression op='='>
+                    <expression op='[contestants_clean2.csv].[to_country]' />
+                    <expression op='[votes.csv].[to_country]' />
+                  </expression>
+                </clause>
+                <relation connection='textscan.10z75va1nprsie13bvt8j069l62x' name='contestants_clean2.csv' table='[contestants_clean2#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='date' date-parse-format='yyyy' name='year' ordinal='0' />
+                    <column datatype='string' name='to_country_id' ordinal='1' />
+                    <column datatype='string' name='to_country' ordinal='2' />
+                    <column datatype='string' name='performer' ordinal='3' />
+                    <column datatype='string' name='song' ordinal='4' />
+                    <column datatype='integer' name='place_contest' ordinal='5' />
+                    <column datatype='integer' name='running_final' ordinal='6' />
+                    <column datatype='integer' name='place_final' ordinal='7' />
+                    <column datatype='integer' name='points_final' ordinal='8' />
+                    <column datatype='integer' name='points_tele_final' ordinal='9' />
+                    <column datatype='integer' name='points_jury_final' ordinal='10' />
+                    <column datatype='string' name='lyrics' ordinal='11' />
+                    <column datatype='string' name='youtube_url' ordinal='12' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.1m0ev190fk03j21d5gcza1p36pym' name='votes.csv' table='[votes#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_DE'>
+                    <column datatype='integer' name='year' ordinal='0' />
+                    <column datatype='string' name='round' ordinal='1' />
+                    <column datatype='string' name='from_country_id' ordinal='2' />
+                    <column datatype='string' name='to_country_id' ordinal='3' />
+                    <column datatype='string' name='from_country' ordinal='4' />
+                    <column datatype='string' name='to_country' ordinal='5' />
+                    <column datatype='integer' name='total_points' ordinal='6' />
+                    <column datatype='string' name='tele_points' ordinal='7' />
+                    <column datatype='integer' name='jury_points' ordinal='8' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='avg points map'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='contestants_clean2' name='federated.1c59zf10riugal1ev845t1j6vjtm' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1c59zf10riugal1ev845t1j6vjtm'>
+            <column-instance column='[points_final]' derivation='Avg' name='[avg:points_final:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[to_country]' derivation='None' name='[none:to_country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[to_country_id]' derivation='None' name='[none:to_country_id:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[points_final]' role='measure' type='quantitative' />
+            <column datatype='string' name='[to_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[to_country_id]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='date' name='[year]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1c59zf10riugal1ev845t1j6vjtm].[avg:points_final:qk]' included-values='in-range'>
+            <min>9.0</min>
+            <max>412.66666666666669</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1c59zf10riugal1ev845t1j6vjtm].[none:year:qk]' included-values='in-range'>
+            <min>#2000-01-01#</min>
+            <max>#2023-01-01#</max>
+          </filter>
+          <slices>
+            <column>[federated.1c59zf10riugal1ev845t1j6vjtm].[avg:points_final:qk]</column>
+            <column>[federated.1c59zf10riugal1ev845t1j6vjtm].[none:year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1c59zf10riugal1ev845t1j6vjtm].[Longitude (generated)]' field-type='quantitative' max='25389912.502021126' min='-7681653.1845903397' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1c59zf10riugal1ev845t1j6vjtm].[Latitude (generated)]' field-type='quantitative' max='12611085.075711565' min='-6262725.0524969492' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1c59zf10riugal1ev845t1j6vjtm].[avg:points_final:qk]' palette='green_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1c59zf10riugal1ev845t1j6vjtm].[avg:points_final:qk]' />
+              <lod column='[federated.1c59zf10riugal1ev845t1j6vjtm].[none:to_country_id:nk]' />
+              <lod column='[federated.1c59zf10riugal1ev845t1j6vjtm].[none:to_country:nk]' />
+              <geometry column='[federated.1c59zf10riugal1ev845t1j6vjtm].[Geometry (generated)]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>to_country:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1c59zf10riugal1ev845t1j6vjtm].[none:to_country:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Median points_final:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1c59zf10riugal1ev845t1j6vjtm].[avg:points_final:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>[federated.1c59zf10riugal1ev845t1j6vjtm].[Latitude (generated)]</rows>
+        <cols>[federated.1c59zf10riugal1ev845t1j6vjtm].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{9F4FAC76-4F2E-4C39-8687-41FECD7454BA}' />
+    </worksheet>
+    <worksheet name='country place in final'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='contestants_clean2' name='federated.1c59zf10riugal1ev845t1j6vjtm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1c59zf10riugal1ev845t1j6vjtm'>
+            <column-instance column='[to_country]' derivation='None' name='[none:to_country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[place_final]' role='measure' type='quantitative' />
+            <column-instance column='[place_final]' derivation='Sum' name='[sum:place_final:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[to_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[year]' derivation='Year-Trunc' name='[tyr:year:qk]' pivot='key' type='quantitative' />
+            <column datatype='date' name='[year]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1c59zf10riugal1ev845t1j6vjtm].[none:to_country:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:to_country:nk]' member='&quot;Germany&quot;' />
+              <groupfilter function='member' level='[none:to_country:nk]' member='&quot;Spain&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.1c59zf10riugal1ev845t1j6vjtm].[none:year:qk]' included-values='in-range'>
+            <min>#2000-01-01#</min>
+            <max>#2023-01-01#</max>
+          </filter>
+          <slices>
+            <column>[federated.1c59zf10riugal1ev845t1j6vjtm].[none:to_country:nk]</column>
+            <column>[federated.1c59zf10riugal1ev845t1j6vjtm].[none:year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1c59zf10riugal1ev845t1j6vjtm].[sum:place_final:qk]' field-type='quantitative' reverse='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1c59zf10riugal1ev845t1j6vjtm].[none:to_country:nk]' />
+              <lod column='[federated.1c59zf10riugal1ev845t1j6vjtm].[none:to_country:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-range-scope' value='table' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='range' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1c59zf10riugal1ev845t1j6vjtm].[sum:place_final:qk]</rows>
+        <cols>[federated.1c59zf10riugal1ev845t1j6vjtm].[tyr:year:qk]</cols>
+      </table>
+      <simple-id uuid='{647ADEAC-BD75-477A-8CA4-4B8AC8CC8CB9}' />
+    </worksheet>
+    <worksheet name='jury points over years'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='contestants_clean2' name='federated.1c59zf10riugal1ev845t1j6vjtm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1c59zf10riugal1ev845t1j6vjtm'>
+            <column-instance column='[to_country]' derivation='None' name='[none:to_country:nk]' pivot='key' type='nominal' />
+            <column datatype='integer' name='[points_jury_final]' role='measure' type='quantitative' />
+            <column-instance column='[points_jury_final]' derivation='Sum' name='[sum:points_jury_final:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[to_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[year]' derivation='Year-Trunc' name='[tyr:year:qk]' pivot='key' type='quantitative' />
+            <column datatype='date' name='[year]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1c59zf10riugal1ev845t1j6vjtm].[none:to_country:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:to_country:nk]' member='&quot;Finland&quot;' />
+              <groupfilter function='member' level='[none:to_country:nk]' member='&quot;Germany&quot;' />
+              <groupfilter function='member' level='[none:to_country:nk]' member='&quot;Sweden&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1c59zf10riugal1ev845t1j6vjtm].[none:to_country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1c59zf10riugal1ev845t1j6vjtm].[none:to_country:nk]' />
+              <lod column='[federated.1c59zf10riugal1ev845t1j6vjtm].[none:to_country:nk]' />
+              <lod column='[federated.1c59zf10riugal1ev845t1j6vjtm].[tyr:year:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1c59zf10riugal1ev845t1j6vjtm].[sum:points_jury_final:qk]</rows>
+        <cols>[federated.1c59zf10riugal1ev845t1j6vjtm].[tyr:year:qk]</cols>
+      </table>
+      <simple-id uuid='{B0FD60CE-9156-4F96-B3D3-78A2150D7677}' />
+    </worksheet>
+    <worksheet name='running order vs place'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='contestants_clean2' name='federated.1c59zf10riugal1ev845t1j6vjtm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1c59zf10riugal1ev845t1j6vjtm'>
+            <column-instance column='[to_country]' derivation='None' name='[none:to_country:nk]' pivot='key' type='nominal' />
+            <column datatype='integer' name='[place_final]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[running_final]' role='measure' type='quantitative' />
+            <column-instance column='[place_final]' derivation='Sum' name='[sum:place_final:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[running_final]' derivation='Sum' name='[sum:running_final:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[to_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[year]' derivation='Year-Trunc' name='[tyr:year:qk]' pivot='key' type='quantitative' />
+            <column datatype='date' name='[year]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1c59zf10riugal1ev845t1j6vjtm].[none:to_country:nk]'>
+            <groupfilter function='member' level='[none:to_country:nk]' member='&quot;Germany&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1c59zf10riugal1ev845t1j6vjtm].[none:to_country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1c59zf10riugal1ev845t1j6vjtm].[sum:running_final:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1c59zf10riugal1ev845t1j6vjtm].[sum:running_final:qk]' palette='orange_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <lod column='[federated.1c59zf10riugal1ev845t1j6vjtm].[none:to_country:nk]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1c59zf10riugal1ev845t1j6vjtm].[sum:place_final:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <color column='[federated.1c59zf10riugal1ev845t1j6vjtm].[sum:place_final:qk]' />
+              <lod column='[federated.1c59zf10riugal1ev845t1j6vjtm].[none:to_country:nk]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1c59zf10riugal1ev845t1j6vjtm].[sum:running_final:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <color column='[federated.1c59zf10riugal1ev845t1j6vjtm].[sum:running_final:qk]' />
+              <lod column='[federated.1c59zf10riugal1ev845t1j6vjtm].[none:to_country:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1c59zf10riugal1ev845t1j6vjtm].[sum:place_final:qk] + [federated.1c59zf10riugal1ev845t1j6vjtm].[sum:running_final:qk])</rows>
+        <cols>[federated.1c59zf10riugal1ev845t1j6vjtm].[tyr:year:qk]</cols>
+      </table>
+      <simple-id uuid='{17D3F3F6-EAA7-458C-9D76-4CFC78468965}' />
+    </worksheet>
+    <worksheet name='tele points over years'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='contestants_clean2' name='federated.1c59zf10riugal1ev845t1j6vjtm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1c59zf10riugal1ev845t1j6vjtm'>
+            <column-instance column='[to_country]' derivation='None' name='[none:to_country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[points_tele_final]' role='measure' type='quantitative' />
+            <column-instance column='[points_tele_final]' derivation='Sum' name='[sum:points_tele_final:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[to_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[year]' derivation='Year-Trunc' name='[tyr:year:qk]' pivot='key' type='quantitative' />
+            <column datatype='date' name='[year]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1c59zf10riugal1ev845t1j6vjtm].[none:to_country:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:to_country:nk]' member='&quot;Finland&quot;' />
+              <groupfilter function='member' level='[none:to_country:nk]' member='&quot;Germany&quot;' />
+              <groupfilter function='member' level='[none:to_country:nk]' member='&quot;Sweden&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.1c59zf10riugal1ev845t1j6vjtm].[none:year:qk]' included-values='in-range'>
+            <min>#2016-01-01#</min>
+            <max>#2023-01-01#</max>
+          </filter>
+          <slices>
+            <column>[federated.1c59zf10riugal1ev845t1j6vjtm].[none:to_country:nk]</column>
+            <column>[federated.1c59zf10riugal1ev845t1j6vjtm].[none:year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1c59zf10riugal1ev845t1j6vjtm].[none:to_country:nk]' />
+              <lod column='[federated.1c59zf10riugal1ev845t1j6vjtm].[none:to_country:nk]' />
+              <lod column='[federated.1c59zf10riugal1ev845t1j6vjtm].[tyr:year:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1c59zf10riugal1ev845t1j6vjtm].[sum:points_tele_final:qk]</rows>
+        <cols>[federated.1c59zf10riugal1ev845t1j6vjtm].[tyr:year:qk]</cols>
+      </table>
+      <simple-id uuid='{7AFF219D-8FFF-479E-B314-CB4F51040B6D}' />
+    </worksheet>
+    <worksheet name='total points over years'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='contestants_clean2' name='federated.1c59zf10riugal1ev845t1j6vjtm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1c59zf10riugal1ev845t1j6vjtm'>
+            <column-instance column='[to_country]' derivation='None' name='[none:to_country:nk]' pivot='key' type='nominal' />
+            <column datatype='integer' name='[points_final]' role='measure' type='quantitative' />
+            <column-instance column='[points_final]' derivation='Sum' name='[sum:points_final:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[to_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[year]' derivation='Year-Trunc' name='[tyr:year:qk]' pivot='key' type='quantitative' />
+            <column datatype='date' name='[year]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1c59zf10riugal1ev845t1j6vjtm].[none:to_country:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:to_country:nk]' member='&quot;Finland&quot;' />
+              <groupfilter function='member' level='[none:to_country:nk]' member='&quot;Germany&quot;' />
+              <groupfilter function='member' level='[none:to_country:nk]' member='&quot;Sweden&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1c59zf10riugal1ev845t1j6vjtm].[none:to_country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1c59zf10riugal1ev845t1j6vjtm].[none:to_country:nk]' />
+              <lod column='[federated.1c59zf10riugal1ev845t1j6vjtm].[none:to_country:nk]' />
+              <lod column='[federated.1c59zf10riugal1ev845t1j6vjtm].[tyr:year:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1c59zf10riugal1ev845t1j6vjtm].[sum:points_final:qk]</rows>
+        <cols>[federated.1c59zf10riugal1ev845t1j6vjtm].[tyr:year:qk]</cols>
+      </table>
+      <simple-id uuid='{6757FFBA-CEC5-4BE7-A994-4E908D9B66C7}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='jury points over years'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.1c59zf10riugal1ev845t1j6vjtm].[none:to_country:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1c59zf10riugal1ev845t1j6vjtm].[none:to_country:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{27EFA009-4099-45A1-9D5B-FED928A020C3}' />
+    </window>
+    <window class='worksheet' name='tele points over years'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.1c59zf10riugal1ev845t1j6vjtm].[none:to_country:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1c59zf10riugal1ev845t1j6vjtm].[none:to_country:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E7F1E778-090B-4348-B4C8-87CCD6A41EE2}' />
+    </window>
+    <window class='worksheet' name='total points over years'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.1c59zf10riugal1ev845t1j6vjtm].[none:to_country:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1c59zf10riugal1ev845t1j6vjtm].[none:to_country:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9C841FD6-FD22-47AB-B4AB-562FFF20FB59}' />
+    </window>
+    <window class='worksheet' maximized='true' name='avg points map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1c59zf10riugal1ev845t1j6vjtm].[none:year:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card param='[federated.1c59zf10riugal1ev845t1j6vjtm].[avg:points_final:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.1c59zf10riugal1ev845t1j6vjtm].[avg:points_final:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3F8BB96F-D273-4C5E-A8A4-DB79E2FFCECA}' />
+    </window>
+    <window class='worksheet' name='running order vs place'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.1c59zf10riugal1ev845t1j6vjtm].[none:to_country:nk]' type='filter' />
+            <card pane-specification-id='1' param='[federated.1c59zf10riugal1ev845t1j6vjtm].[sum:place_final:qk]' type='color' />
+            <card pane-specification-id='2' param='[federated.1c59zf10riugal1ev845t1j6vjtm].[sum:running_final:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E90F58EF-9513-479C-8505-3B199A84CFFF}' />
+    </window>
+    <window class='worksheet' name='country place in final'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1c59zf10riugal1ev845t1j6vjtm].[none:year:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card mode='checkdropdown' param='[federated.1c59zf10riugal1ev845t1j6vjtm].[none:to_country:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1c59zf10riugal1ev845t1j6vjtm].[none:to_country:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BC90E29A-1944-471C-A07B-AD62104D68AA}' />
+    </window>
+  </windows>
+</workbook>
