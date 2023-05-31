@@ -1,0 +1,2381 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20231.23.0310.1044                               -->
+<workbook original-version='18.1' source-build='2023.1.0 (20231.23.0310.1044)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='votes_finalists' inline='true' name='federated.16o1nv406s85od18uk9900m3b6p2' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='votes_finalists' name='textscan.17dxb4w1mk3jpm1frxo4u03ktnlf'>
+            <connection class='textscan' directory='Data/data' filename='votes_finalists.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.17dxb4w1mk3jpm1frxo4u03ktnlf' name='votes_finalists.csv' table='[votes_finalists#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_DE'>
+            <column datatype='date' name='year' ordinal='0' />
+            <column datatype='string' name='round' ordinal='1' />
+            <column datatype='string' name='from_country_id' ordinal='2' />
+            <column datatype='string' name='to_country_id' ordinal='3' />
+            <column datatype='string' name='from_country' ordinal='4' />
+            <column datatype='string' name='to_country' ordinal='5' />
+            <column datatype='integer' name='total_points' ordinal='6' />
+            <column datatype='integer' name='tele_points' ordinal='7' />
+            <column datatype='integer' name='jury_points' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.17dxb4w1mk3jpm1frxo4u03ktnlf' name='votes_finalists.csv' table='[votes_finalists#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_DE'>
+            <column datatype='date' name='year' ordinal='0' />
+            <column datatype='string' name='round' ordinal='1' />
+            <column datatype='string' name='from_country_id' ordinal='2' />
+            <column datatype='string' name='to_country_id' ordinal='3' />
+            <column datatype='string' name='from_country' ordinal='4' />
+            <column datatype='string' name='to_country' ordinal='5' />
+            <column datatype='integer' name='total_points' ordinal='6' />
+            <column datatype='integer' name='tele_points' ordinal='7' />
+            <column datatype='integer' name='jury_points' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[votes_finalists.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_DE&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[votes_finalists.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[votes_finalists.csv_A331A3970B084A7A978637AAC3EB9371]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>round</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[round]</local-name>
+            <parent-name>[votes_finalists.csv]</parent-name>
+            <remote-alias>round</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[votes_finalists.csv_A331A3970B084A7A978637AAC3EB9371]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>from_country_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[from_country_id]</local-name>
+            <parent-name>[votes_finalists.csv]</parent-name>
+            <remote-alias>from_country_id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[votes_finalists.csv_A331A3970B084A7A978637AAC3EB9371]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>to_country_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[to_country_id]</local-name>
+            <parent-name>[votes_finalists.csv]</parent-name>
+            <remote-alias>to_country_id</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[votes_finalists.csv_A331A3970B084A7A978637AAC3EB9371]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>from_country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[from_country]</local-name>
+            <parent-name>[votes_finalists.csv]</parent-name>
+            <remote-alias>from_country</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[votes_finalists.csv_A331A3970B084A7A978637AAC3EB9371]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>to_country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[to_country]</local-name>
+            <parent-name>[votes_finalists.csv]</parent-name>
+            <remote-alias>to_country</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[votes_finalists.csv_A331A3970B084A7A978637AAC3EB9371]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_points</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_points]</local-name>
+            <parent-name>[votes_finalists.csv]</parent-name>
+            <remote-alias>total_points</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[votes_finalists.csv_A331A3970B084A7A978637AAC3EB9371]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tele_points</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tele_points]</local-name>
+            <parent-name>[votes_finalists.csv]</parent-name>
+            <remote-alias>tele_points</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[votes_finalists.csv_A331A3970B084A7A978637AAC3EB9371]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>jury_points</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[jury_points]</local-name>
+            <parent-name>[votes_finalists.csv]</parent-name>
+            <remote-alias>jury_points</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[votes_finalists.csv_A331A3970B084A7A978637AAC3EB9371]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='votes_finalists.csv' datatype='table' name='[__tableau_internal_object_id__].[votes_finalists.csv_A331A3970B084A7A978637AAC3EB9371]' role='measure' type='quantitative' />
+      <column caption='From Country' datatype='string' name='[from_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='From Country Id' datatype='string' name='[from_country_id]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Jury Points' datatype='integer' name='[jury_points]' role='measure' type='quantitative' />
+      <column caption='Round' datatype='string' name='[round]' role='dimension' type='nominal' />
+      <column caption='Tele Points' datatype='integer' name='[tele_points]' role='measure' type='quantitative' />
+      <column caption='To Country' datatype='string' name='[to_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='To Country Id' datatype='string' name='[to_country_id]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Total Points' datatype='integer' name='[total_points]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='date' name='[year]' role='dimension' type='ordinal' />
+      <column-instance column='[jury_points]' derivation='Avg' name='[avg:jury_points:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <column-instance column='[jury_points]' derivation='Sum' name='[sum:jury_points:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[tele_points]' derivation='Sum' name='[sum:tele_points:qk]' pivot='key' type='quantitative' />
+      <group caption='Tooltip (To Country)' hidden='true' name='[Tooltip (To Country)]' name-style='unqualified' user:auto-column='sheet_link' user:ui-vit-column='true'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[to_country]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Forecast Indicator:nk]' type='palette'>
+            <map to='#0e6ece'>
+              <bucket>&quot;Actual&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Estimate&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.16o1nv406s85od18uk9900m3b6p2].[sum:jury_points:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.16o1nv406s85od18uk9900m3b6p2].[sum:tele_points:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Germany&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Actual&quot;</bucket>
+            <bucket>&quot;Estimate&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='votes_finalists.csv' id='votes_finalists.csv_A331A3970B084A7A978637AAC3EB9371'>
+            <properties context=''>
+              <relation connection='textscan.17dxb4w1mk3jpm1frxo4u03ktnlf' name='votes_finalists.csv' table='[votes_finalists#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_DE'>
+                  <column datatype='date' name='year' ordinal='0' />
+                  <column datatype='string' name='round' ordinal='1' />
+                  <column datatype='string' name='from_country_id' ordinal='2' />
+                  <column datatype='string' name='to_country_id' ordinal='3' />
+                  <column datatype='string' name='from_country' ordinal='4' />
+                  <column datatype='string' name='to_country' ordinal='5' />
+                  <column datatype='integer' name='total_points' ordinal='6' />
+                  <column datatype='integer' name='tele_points' ordinal='7' />
+                  <column datatype='integer' name='jury_points' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='(X) heatmap vote distribution'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='votes_finalists' name='federated.16o1nv406s85od18uk9900m3b6p2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16o1nv406s85od18uk9900m3b6p2'>
+            <column caption='From Country' datatype='string' name='[from_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Jury Points' datatype='integer' name='[jury_points]' role='measure' type='quantitative' />
+            <column-instance column='[from_country]' derivation='None' name='[none:from_country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[to_country]' derivation='None' name='[none:to_country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[jury_points]' derivation='Sum' name='[sum:jury_points:qk]' pivot='key' type='quantitative' />
+            <column caption='To Country' datatype='string' name='[to_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Year' datatype='date' name='[year]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:year:qk]' included-values='in-range'>
+            <min>#1990-02-17#</min>
+            <max>#2023-05-01#</max>
+          </filter>
+          <slices>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[none:year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.16o1nv406s85od18uk9900m3b6p2].[sum:jury_points:qk]' />
+              <text column='[federated.16o1nv406s85od18uk9900m3b6p2].[sum:jury_points:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]</rows>
+        <cols>[federated.16o1nv406s85od18uk9900m3b6p2].[none:from_country:nk]</cols>
+      </table>
+      <simple-id uuid='{27BD27B8-9273-45E7-A742-7FFCA4084E4B}' />
+    </worksheet>
+    <worksheet name='(X) prediction'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='votes_finalists' name='federated.16o1nv406s85od18uk9900m3b6p2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16o1nv406s85od18uk9900m3b6p2'>
+            <column-instance column='[jury_points]' derivation='Sum' forecast-column-base='[sum:jury_points:qk]' forecast-column-type='forecast-value' name='[fVal:sum:jury_points:qk]' pivot='key' type='quantitative' />
+            <column caption='From Country' datatype='string' name='[from_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Jury Points' datatype='integer' name='[jury_points]' role='measure' type='quantitative' />
+            <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+            <column-instance column='[from_country]' derivation='None' name='[none:from_country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[to_country]' derivation='None' name='[none:to_country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[jury_points]' derivation='Sum' name='[sum:jury_points:qk]' pivot='key' type='quantitative' />
+            <column caption='To Country' datatype='string' name='[to_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Year' datatype='date' name='[year]' role='dimension' type='ordinal' />
+            <column-instance column='[year]' derivation='Year' name='[yr:year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:from_country:nk]'>
+            <groupfilter function='member' level='[none:from_country:nk]' member='&quot;Finland&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]'>
+            <groupfilter function='member' level='[none:to_country:nk]' member='&quot;Sweden&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:year:qk]' included-values='in-range'>
+            <min>#2005-12-29#</min>
+            <max>#2023-05-01#</max>
+          </filter>
+          <slices>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[none:from_country:nk]</column>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]</column>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[none:year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.16o1nv406s85od18uk9900m3b6p2].[yr:year:ok]' value='42' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <lod column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:from_country:nk]' />
+              <lod column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]' />
+              <color column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:Forecast Indicator:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.16o1nv406s85od18uk9900m3b6p2].[fVal:sum:jury_points:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-table' value-column='[federated.16o1nv406s85od18uk9900m3b6p2].[fVal:sum:jury_points:qk]' z-order='1' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='370' />
+                <format attr='maxheight' value='370' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16o1nv406s85od18uk9900m3b6p2].[fVal:sum:jury_points:qk]</rows>
+        <cols>[federated.16o1nv406s85od18uk9900m3b6p2].[yr:year:ok]</cols>
+        <forecast-specification auto-forecast-agg='true' band-confidence-level='90.000000' enabled='true' fill-type='fill-missing' ignore-last='0' model-type='auto-season' range-periods='Year-Trunc' range-size='1' range-type='next' show-prediction-bands='false' />
+      </table>
+      <simple-id uuid='{AA10D16D-58CD-437D-929F-08F9B253AF79}' />
+    </worksheet>
+    <worksheet name='(X) table - votes from'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='votes_finalists' name='federated.16o1nv406s85od18uk9900m3b6p2' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.16o1nv406s85od18uk9900m3b6p2'>
+            <column caption='From Country' datatype='string' name='[from_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Jury Points' datatype='integer' name='[jury_points]' role='measure' type='quantitative' />
+            <column-instance column='[from_country]' derivation='None' name='[none:from_country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[to_country]' derivation='None' name='[none:to_country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[jury_points]' derivation='Sum' name='[sum:jury_points:qk]' pivot='key' type='quantitative' />
+            <column caption='To Country' datatype='string' name='[to_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Year' datatype='date' name='[year]' role='dimension' type='ordinal' />
+            <column-instance column='[year]' derivation='Year' name='[yr:year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]'>
+            <groupfilter function='member' level='[none:to_country:nk]' member='&quot;Sweden&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.16o1nv406s85od18uk9900m3b6p2].[yr:year:ok]'>
+            <groupfilter function='member' level='[yr:year:ok]' member='2023' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.16o1nv406s85od18uk9900m3b6p2].[none:from_country:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.16o1nv406s85od18uk9900m3b6p2].[sum:jury_points:qk]' shelf='rows'>
+              <sort-filter-info>
+                <sort-filter level-name='[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]' member-value='&quot;Sweden&quot;' />
+              </sort-filter-info>
+            </shelf-sort-v2>
+          </shelf-sorts>
+          <slices>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[yr:year:ok]</column>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.16o1nv406s85od18uk9900m3b6p2].[sum:jury_points:qk]' />
+              <lod column='[federated.16o1nv406s85od18uk9900m3b6p2].[sum:jury_points:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16o1nv406s85od18uk9900m3b6p2].[none:from_country:nk]</rows>
+        <cols>[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]</cols>
+      </table>
+      <simple-id uuid='{108EA30B-3C61-40EE-9715-E20152326222}' />
+    </worksheet>
+    <worksheet name='(X) top 10 Votes to table'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Who votes for who?</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='votes_finalists' name='federated.16o1nv406s85od18uk9900m3b6p2' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.16o1nv406s85od18uk9900m3b6p2'>
+            <column-instance column='[jury_points]' derivation='Avg' name='[avg:jury_points:qk]' pivot='key' type='quantitative' />
+            <column caption='From Country' datatype='string' name='[from_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Jury Points' datatype='integer' name='[jury_points]' role='measure' type='quantitative' />
+            <column-instance column='[from_country]' derivation='None' name='[none:from_country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[to_country]' derivation='None' name='[none:to_country:nk]' pivot='key' type='nominal' />
+            <column caption='To Country' datatype='string' name='[to_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Year' datatype='date' name='[year]' role='dimension' type='ordinal' />
+            <column-instance column='[year]' derivation='Year' name='[yr:year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' included-values='in-range'>
+            <min>2.7999999999999998</min>
+          </filter>
+          <filter class='categorical' column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:from_country:nk]'>
+            <groupfilter function='member' level='[none:from_country:nk]' member='&quot;Denmark&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]'>
+            <groupfilter expression='COUNTD([year]) &gt; 2' function='filter' user:ui-filter-by-field='true' user:ui-marker='filter-by'>
+              <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                <groupfilter function='level-members' level='[none:to_country:nk]' />
+                <groupfilter function='member' level='[none:to_country:nk]' member='%null%' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]' direction='DESC' using='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' />
+          <filter class='categorical' column='[federated.16o1nv406s85od18uk9900m3b6p2].[yr:year:ok]'>
+            <groupfilter function='level-members' level='[yr:year:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[yr:year:ok]</column>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[none:from_country:nk]</column>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]</column>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' value='n#,##0.0;-#,##0.0' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' />
+              <lod column='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' />
+              <text column='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='708' />
+                <format attr='maxwidth' value='708' />
+                <format attr='minheight' value='1020' />
+                <format attr='maxheight' value='1020' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]</rows>
+        <cols>[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]</cols>
+      </table>
+      <simple-id uuid='{4982AF4A-3904-489A-9FFB-A1AD02713E58}' />
+    </worksheet>
+    <worksheet name='(X) votes to finland'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='votes_finalists' name='federated.16o1nv406s85od18uk9900m3b6p2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16o1nv406s85od18uk9900m3b6p2'>
+            <column caption='From Country' datatype='string' name='[from_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Jury Points' datatype='integer' name='[jury_points]' role='measure' type='quantitative' />
+            <column-instance column='[from_country]' derivation='None' name='[none:from_country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[jury_points]' derivation='Sum' name='[sum:jury_points:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='date' name='[year]' role='dimension' type='ordinal' />
+            <column-instance column='[year]' derivation='Year' name='[yr:year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:from_country:nk]'>
+            <groupfilter function='member' level='[none:from_country:nk]' member='&quot;Estonia&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[none:from_country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.16o1nv406s85od18uk9900m3b6p2].[sum:jury_points:qk]</rows>
+        <cols>[federated.16o1nv406s85od18uk9900m3b6p2].[yr:year:ok]</cols>
+      </table>
+      <simple-id uuid='{6DA773CC-583D-49C9-9869-6C3A20F09412}' />
+    </worksheet>
+    <worksheet name='Azerbaijan - votes to (2019)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='votes_finalists' name='federated.16o1nv406s85od18uk9900m3b6p2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16o1nv406s85od18uk9900m3b6p2'>
+            <column caption='From Country' datatype='string' name='[from_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Jury Points' datatype='integer' name='[jury_points]' role='measure' type='quantitative' />
+            <column-instance column='[from_country]' derivation='None' name='[none:from_country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[to_country]' derivation='None' name='[none:to_country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[jury_points]' derivation='Sum' name='[sum:jury_points:qk]' pivot='key' type='quantitative' />
+            <column caption='To Country' datatype='string' name='[to_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Year' datatype='date' name='[year]' role='dimension' type='ordinal' />
+            <column-instance column='[year]' derivation='Year' name='[yr:year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.16o1nv406s85od18uk9900m3b6p2].[Tooltip (To Country)]'>
+            <groupfilter function='level-members' level='[to_country]' user:ui-action-filter='[Action - table - votes to]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:from_country:nk]'>
+            <groupfilter function='member' level='[none:from_country:nk]' member='&quot;Estonia&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]'>
+            <groupfilter function='level-members' level='[none:to_country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <computed-sort column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]' direction='DESC' using='[federated.16o1nv406s85od18uk9900m3b6p2].[sum:jury_points:qk]' />
+          <filter class='quantitative' column='[federated.16o1nv406s85od18uk9900m3b6p2].[sum:jury_points:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>12</max>
+          </filter>
+          <filter class='categorical' column='[federated.16o1nv406s85od18uk9900m3b6p2].[yr:year:ok]'>
+            <groupfilter function='member' level='[yr:year:ok]' member='2019' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[Tooltip (To Country)]</column>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]</column>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[yr:year:ok]</column>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[none:from_country:nk]</column>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[sum:jury_points:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='76' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.16o1nv406s85od18uk9900m3b6p2].[sum:jury_points:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#dde8d8</color>
+                <color>#cae0c0</color>
+                <color>#b8d8aa</color>
+                <color>#a6cf95</color>
+                <color>#96c781</color>
+                <color>#86bf6e</color>
+                <color>#77b65c</color>
+                <color>#69ae4c</color>
+                <color>#5ca63d</color>
+                <color>#509e2f</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.16o1nv406s85od18uk9900m3b6p2].[sum:jury_points:qk]' />
+              <text column='[federated.16o1nv406s85od18uk9900m3b6p2].[sum:jury_points:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='16' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{A0C6DB27-54E4-40C6-B524-398F2DC62EBF}' />
+    </worksheet>
+    <worksheet name='Denmark - votes to (2019)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='votes_finalists' name='federated.16o1nv406s85od18uk9900m3b6p2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16o1nv406s85od18uk9900m3b6p2'>
+            <column caption='From Country' datatype='string' name='[from_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Jury Points' datatype='integer' name='[jury_points]' role='measure' type='quantitative' />
+            <column-instance column='[from_country]' derivation='None' name='[none:from_country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[to_country]' derivation='None' name='[none:to_country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[jury_points]' derivation='Sum' name='[sum:jury_points:qk]' pivot='key' type='quantitative' />
+            <column caption='To Country' datatype='string' name='[to_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Year' datatype='date' name='[year]' role='dimension' type='ordinal' />
+            <column-instance column='[year]' derivation='Year' name='[yr:year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.16o1nv406s85od18uk9900m3b6p2].[Tooltip (To Country)]'>
+            <groupfilter function='level-members' level='[to_country]' user:ui-action-filter='[Action - table - votes to]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:from_country:nk]' filter-group='6'>
+            <groupfilter function='member' level='[none:from_country:nk]' member='&quot;Denmark&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:to_country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <computed-sort column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]' direction='DESC' using='[federated.16o1nv406s85od18uk9900m3b6p2].[sum:jury_points:qk]' />
+          <filter class='quantitative' column='[federated.16o1nv406s85od18uk9900m3b6p2].[sum:jury_points:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>12</max>
+          </filter>
+          <filter class='categorical' column='[federated.16o1nv406s85od18uk9900m3b6p2].[yr:year:ok]' filter-group='5'>
+            <groupfilter function='member' level='[yr:year:ok]' member='2019' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[Tooltip (To Country)]</column>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]</column>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[yr:year:ok]</column>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[none:from_country:nk]</column>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[sum:jury_points:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='76' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.16o1nv406s85od18uk9900m3b6p2].[sum:jury_points:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#ecd7da</color>
+                <color>#e8bdc4</color>
+                <color>#e4a5af</color>
+                <color>#e08d9b</color>
+                <color>#dc7787</color>
+                <color>#d86074</color>
+                <color>#d44b61</color>
+                <color>#d0364f</color>
+                <color>#cc233e</color>
+                <color>#c8102e</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.16o1nv406s85od18uk9900m3b6p2].[sum:jury_points:qk]' />
+              <text column='[federated.16o1nv406s85od18uk9900m3b6p2].[sum:jury_points:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='14' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{FB0B77C7-488D-423E-8E5B-1CB3AEB6AC08}' />
+    </worksheet>
+    <worksheet name='Map avg points received'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='votes_finalists' name='federated.16o1nv406s85od18uk9900m3b6p2' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.16o1nv406s85od18uk9900m3b6p2'>
+            <column-instance column='[jury_points]' derivation='Avg' name='[avg:jury_points:qk]' pivot='key' type='quantitative' />
+            <column caption='Jury Points' datatype='integer' name='[jury_points]' role='measure' type='quantitative' />
+            <column-instance column='[to_country]' derivation='None' name='[none:to_country:nk]' pivot='key' type='nominal' />
+            <column caption='To Country' datatype='string' name='[to_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:to_country:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:to_country:nk]' member='&quot;Serbia and montenegro&quot;' />
+                <groupfilter function='member' level='[none:to_country:nk]' member='&quot;Yugoslavia&quot;' />
+                <groupfilter function='member' level='[none:to_country:nk]' member='%null%' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' value='' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' num-steps='4' palette='green_blue_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' />
+              <lod column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]' />
+              <geometry column='[federated.16o1nv406s85od18uk9900m3b6p2].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-transparency' value='206' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16o1nv406s85od18uk9900m3b6p2].[Latitude (generated)]</rows>
+        <cols>[federated.16o1nv406s85od18uk9900m3b6p2].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{82A6FF4F-2123-4D3B-809A-A85B6A8B999D}' />
+    </worksheet>
+    <worksheet name='Sheet 17'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='votes_finalists' name='federated.16o1nv406s85od18uk9900m3b6p2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16o1nv406s85od18uk9900m3b6p2'>
+            <column-instance column='[to_country]' derivation='None' name='[none:to_country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_points]' derivation='Sum' name='[sum:total_points:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[year]' derivation='Month-Trunc' name='[tmn:year:qk]' pivot='key' type='quantitative' />
+            <column caption='To Country' datatype='string' name='[to_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Total Points' datatype='integer' name='[total_points]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='date' name='[year]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]'>
+            <groupfilter function='member' level='[none:to_country:nk]' member='&quot;Ukraine&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.16o1nv406s85od18uk9900m3b6p2].[tmn:year:qk]' field-type='quantitative' major-origin='#2013-01-01 12:00:00#' major-spacing='1' major-units='years' minor-origin='#2013-01-01 12:00:00#' minor-spacing='1' minor-units='years' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.16o1nv406s85od18uk9900m3b6p2].[tmn:year:qk]' scope='cols' value='Year' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='1.3953038454055786' />
+                <format attr='mark-color' value='#0057b7' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16o1nv406s85od18uk9900m3b6p2].[sum:total_points:qk]</rows>
+        <cols>[federated.16o1nv406s85od18uk9900m3b6p2].[tmn:year:qk]</cols>
+      </table>
+      <simple-id uuid='{5676F41C-C1DB-4A3B-8442-720BBD99AA4F}' />
+    </worksheet>
+    <worksheet name='Top 10 votes - Azerbaijan'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Who votes for who?</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='votes_finalists' name='federated.16o1nv406s85od18uk9900m3b6p2' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.16o1nv406s85od18uk9900m3b6p2'>
+            <column-instance column='[jury_points]' derivation='Avg' name='[avg:jury_points:qk]' pivot='key' type='quantitative' />
+            <column caption='From Country' datatype='string' name='[from_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Jury Points' datatype='integer' name='[jury_points]' role='measure' type='quantitative' />
+            <column-instance column='[from_country]' derivation='None' name='[none:from_country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[to_country]' derivation='None' name='[none:to_country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='To Country' datatype='string' name='[to_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Year' datatype='date' name='[year]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' included-values='in-range'>
+            <min>3.7999999999999998</min>
+          </filter>
+          <filter class='categorical' column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:from_country:nk]'>
+            <groupfilter function='member' level='[none:from_country:nk]' member='&quot;Estonia&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]'>
+            <groupfilter expression='COUNTD([year]) &gt; 2' function='filter' user:ui-filter-by-field='true' user:ui-marker='filter-by'>
+              <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                <groupfilter function='level-members' level='[none:to_country:nk]' />
+                <groupfilter function='member' level='[none:to_country:nk]' member='%null%' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]' direction='DESC' using='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' />
+          <filter class='quantitative' column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:year:qk]' included-values='in-range'>
+            <min>#1990-05-01#</min>
+            <max>#2023-05-01#</max>
+          </filter>
+          <slices>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[none:from_country:nk]</column>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]</column>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]</column>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[none:year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' value='22' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]' value='33' />
+            <format attr='text-format' field='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' value='n#,##0.0;-#,##0.0' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' palette='green_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' />
+              <lod column='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' />
+              <text column='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='12' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='450' />
+                <format attr='maxwidth' value='450' />
+                <format attr='minheight' value='1020' />
+                <format attr='maxheight' value='1020' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]</rows>
+        <cols>[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]</cols>
+      </table>
+      <simple-id uuid='{4C142810-2216-4C09-91DE-7DB8F81E9F6C}' />
+    </worksheet>
+    <worksheet name='Top 10 votes - Denmark'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Who votes for who?</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='votes_finalists' name='federated.16o1nv406s85od18uk9900m3b6p2' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.16o1nv406s85od18uk9900m3b6p2'>
+            <column-instance column='[jury_points]' derivation='Avg' name='[avg:jury_points:qk]' pivot='key' type='quantitative' />
+            <column caption='From Country' datatype='string' name='[from_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Jury Points' datatype='integer' name='[jury_points]' role='measure' type='quantitative' />
+            <column-instance column='[from_country]' derivation='None' name='[none:from_country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[to_country]' derivation='None' name='[none:to_country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column caption='To Country' datatype='string' name='[to_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Year' datatype='date' name='[year]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' included-values='in-range'>
+            <min>3.2999999999999998</min>
+          </filter>
+          <filter class='categorical' column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:from_country:nk]'>
+            <groupfilter function='member' level='[none:from_country:nk]' member='&quot;Denmark&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]'>
+            <groupfilter expression='COUNTD([year]) &gt; 2' function='filter' user:ui-filter-by-field='true' user:ui-marker='filter-by'>
+              <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                <groupfilter function='level-members' level='[none:to_country:nk]' />
+                <groupfilter function='member' level='[none:to_country:nk]' member='%null%' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]' direction='DESC' using='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' />
+          <filter class='quantitative' column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:year:qk]' included-values='in-range'>
+            <min>#1990-05-01#</min>
+            <max>#2023-05-01#</max>
+          </filter>
+          <slices>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[none:from_country:nk]</column>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]</column>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]</column>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[none:year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' value='n#,##0.0;-#,##0.0' />
+            <format attr='height' field='[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]' value='33' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' />
+              <lod column='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' />
+              <text column='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='12' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='473' />
+                <format attr='maxwidth' value='473' />
+                <format attr='minheight' value='1020' />
+                <format attr='maxheight' value='1020' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]</rows>
+        <cols>[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]</cols>
+      </table>
+      <simple-id uuid='{5596180E-9F86-4577-8564-C81E11358452}' />
+    </worksheet>
+    <worksheet name='bot 5 avg received'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='votes_finalists' name='federated.16o1nv406s85od18uk9900m3b6p2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16o1nv406s85od18uk9900m3b6p2'>
+            <column-instance column='[jury_points]' derivation='Avg' name='[avg:jury_points:qk]' pivot='key' type='quantitative' />
+            <column caption='Jury Points' datatype='integer' name='[jury_points]' role='measure' type='quantitative' />
+            <column-instance column='[to_country]' derivation='None' name='[none:to_country:nk]' pivot='key' type='nominal' />
+            <column caption='To Country' datatype='string' name='[to_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' included-values='in-range'>
+            <min>0.36842105263157893</min>
+            <max>1.353</max>
+          </filter>
+          <filter class='categorical' column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:to_country:nk]' />
+              <groupfilter function='except'>
+                <groupfilter function='level-members' level='[none:to_country:nk]' />
+                <groupfilter function='union'>
+                  <groupfilter function='member' level='[none:to_country:nk]' member='&quot;Montenegro&quot;' />
+                  <groupfilter function='member' level='[none:to_country:nk]' member='&quot;Morocco&quot;' />
+                  <groupfilter function='member' level='[none:to_country:nk]' member='&quot;Poland&quot;' />
+                  <groupfilter function='member' level='[none:to_country:nk]' member='&quot;San marino&quot;' />
+                  <groupfilter function='member' level='[none:to_country:nk]' member='&quot;Slovakia&quot;' />
+                  <groupfilter function='member' level='[none:to_country:nk]' member='%null%' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]' direction='ASC' using='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' />
+          <slices>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]</column>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='95' />
+            <format attr='text-format' field='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' value='n#,##0.0;-#,##0.0' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]' value='88' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' max='4.1819960859999998' num-steps='4' palette='green_blue_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' />
+              <text column='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='12' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{4FB5291C-1702-4411-B9A3-3C20DE744170}' />
+    </worksheet>
+    <worksheet name='finland-sweden prediction'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='votes_finalists' name='federated.16o1nv406s85od18uk9900m3b6p2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16o1nv406s85od18uk9900m3b6p2'>
+            <column-instance column='[jury_points]' derivation='Sum' forecast-column-base='[sum:jury_points:qk]' forecast-column-type='forecast-value' name='[fVal:sum:jury_points:qk]' pivot='key' type='quantitative' />
+            <column caption='From Country' datatype='string' name='[from_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Jury Points' datatype='integer' name='[jury_points]' role='measure' type='quantitative' />
+            <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+            <column-instance column='[from_country]' derivation='None' name='[none:from_country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[to_country]' derivation='None' name='[none:to_country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[jury_points]' derivation='Sum' name='[sum:jury_points:qk]' pivot='key' type='quantitative' />
+            <column caption='To Country' datatype='string' name='[to_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Year' datatype='date' name='[year]' role='dimension' type='ordinal' />
+            <column-instance column='[year]' derivation='Year' name='[yr:year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:from_country:nk]'>
+            <groupfilter function='member' level='[none:from_country:nk]' member='&quot;Finland&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]'>
+            <groupfilter function='member' level='[none:to_country:nk]' member='&quot;Sweden&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:year:qk]' included-values='in-range'>
+            <min>#2013-03-29#</min>
+            <max>#2023-05-01#</max>
+          </filter>
+          <slices>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[none:from_country:nk]</column>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]</column>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[none:year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.16o1nv406s85od18uk9900m3b6p2].[yr:year:ok]' value='51' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <lod column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:from_country:nk]' />
+              <lod column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]' />
+              <color column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:Forecast Indicator:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='612' />
+                <format attr='maxwidth' value='612' />
+                <format attr='minheight' value='350' />
+                <format attr='maxheight' value='350' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16o1nv406s85od18uk9900m3b6p2].[fVal:sum:jury_points:qk]</rows>
+        <cols>[federated.16o1nv406s85od18uk9900m3b6p2].[yr:year:ok]</cols>
+        <forecast-specification auto-forecast-agg='true' band-confidence-level='95.000000' enabled='true' fill-type='fill-missing' ignore-last='0' model-type='auto-season' range-periods='Year-Trunc' range-size='1' range-type='next' show-prediction-bands='false' />
+      </table>
+      <simple-id uuid='{AC8F5DF1-3F44-450D-9FAD-754A00CA7C93}' />
+    </worksheet>
+    <worksheet name='map - votes given (Azerbaijan)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='votes_finalists' name='federated.16o1nv406s85od18uk9900m3b6p2' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.16o1nv406s85od18uk9900m3b6p2'>
+            <column caption='From Country' datatype='string' name='[from_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Jury Points' datatype='integer' name='[jury_points]' role='measure' type='quantitative' />
+            <column-instance column='[from_country]' derivation='None' name='[none:from_country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[to_country]' derivation='None' name='[none:to_country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[jury_points]' derivation='Sum' name='[sum:jury_points:qk]' pivot='key' type='quantitative' />
+            <column caption='To Country' datatype='string' name='[to_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Year' datatype='date' name='[year]' role='dimension' type='ordinal' />
+            <column-instance column='[year]' derivation='Year' name='[yr:year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:from_country:nk]'>
+            <groupfilter function='member' level='[none:from_country:nk]' member='&quot;Estonia&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:to_country:nk]' />
+              <groupfilter function='member' level='[none:to_country:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.16o1nv406s85od18uk9900m3b6p2].[sum:jury_points:qk]' included-values='in-range'>
+            <min>1</min>
+          </filter>
+          <filter class='categorical' column='[federated.16o1nv406s85od18uk9900m3b6p2].[yr:year:ok]'>
+            <groupfilter function='member' level='[yr:year:ok]' member='2018' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[sum:jury_points:qk]</column>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[none:from_country:nk]</column>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]</column>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[yr:year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.16o1nv406s85od18uk9900m3b6p2].[sum:jury_points:qk]' min='0' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#dde8d8</color>
+                <color>#cae0c0</color>
+                <color>#b8d8aa</color>
+                <color>#a6cf95</color>
+                <color>#96c781</color>
+                <color>#86bf6e</color>
+                <color>#77b65c</color>
+                <color>#69ae4c</color>
+                <color>#5ca63d</color>
+                <color>#509e2f</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='admin-0-boundaries-bg-sub' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-supress-bg' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-sm-parents-bg' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-md-parents-bg' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-lg-parents-bg' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-dispute-sub' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-sub' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-supress' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-sm-parents' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-md-parents' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-lg-parents' value='false' />
+            <format attr='enabled' id='admin1-water-lines-usa-tableau' value='false' />
+            <format attr='enabled' id='9-dash-line-casing' value='false' />
+            <format attr='enabled' id='9-dash-line' value='false' />
+            <format attr='enabled' id='admin-1-label-9th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-8th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-7th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-6th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-5th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-4th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-3rd-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-2nd-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-1st-tier' value='false' />
+            <format attr='enabled' id='us-admin-1-label-abbr-3rd-tier' value='false' />
+            <format attr='enabled' id='us-admin-1-label-abbr-2nd-tier' value='false' />
+            <format attr='enabled' id='us-admin-1-label-abbr-1st-tier' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.16o1nv406s85od18uk9900m3b6p2].[sum:jury_points:qk]' />
+              <lod column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]' />
+              <geometry column='[federated.16o1nv406s85od18uk9900m3b6p2].[Geometry (generated)]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run bold='true' fontalignment='1'><![CDATA[<[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]>]]></run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run fontalignment='1' fontcolor='#787878'>Received  </run>
+                <run bold='true' fontalignment='1'><![CDATA[<[federated.16o1nv406s85od18uk9900m3b6p2].[sum:jury_points:qk]> Jury Points from other countries this year.]]></run>
+                <run fontalignment='1'>Æ&#10;&#10;&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16o1nv406s85od18uk9900m3b6p2].[Latitude (generated)]</rows>
+        <cols>[federated.16o1nv406s85od18uk9900m3b6p2].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{8CFAFAB1-D243-41AE-B0C0-0F285B04A7D3}' />
+    </worksheet>
+    <worksheet name='map - votes given (Denmark)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='votes_finalists' name='federated.16o1nv406s85od18uk9900m3b6p2' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.16o1nv406s85od18uk9900m3b6p2'>
+            <column caption='From Country' datatype='string' name='[from_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Jury Points' datatype='integer' name='[jury_points]' role='measure' type='quantitative' />
+            <column-instance column='[from_country]' derivation='None' name='[none:from_country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[to_country]' derivation='None' name='[none:to_country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[jury_points]' derivation='Sum' name='[sum:jury_points:qk]' pivot='key' type='quantitative' />
+            <column caption='To Country' datatype='string' name='[to_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Year' datatype='date' name='[year]' role='dimension' type='ordinal' />
+            <column-instance column='[year]' derivation='Year' name='[yr:year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:from_country:nk]' filter-group='6'>
+            <groupfilter function='member' level='[none:from_country:nk]' member='&quot;Denmark&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:to_country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.16o1nv406s85od18uk9900m3b6p2].[sum:jury_points:qk]' included-values='in-range'>
+            <min>1</min>
+          </filter>
+          <filter class='categorical' column='[federated.16o1nv406s85od18uk9900m3b6p2].[yr:year:ok]' filter-group='5'>
+            <groupfilter function='member' level='[yr:year:ok]' member='2019' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]</column>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[yr:year:ok]</column>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[none:from_country:nk]</column>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[sum:jury_points:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.16o1nv406s85od18uk9900m3b6p2].[Longitude (generated)]' field-type='quantitative' max='10182342.384782689' min='-4914754.2607916454' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.16o1nv406s85od18uk9900m3b6p2].[Latitude (generated)]' field-type='quantitative' max='12372356.413645115' min='3756503.8024959108' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.16o1nv406s85od18uk9900m3b6p2].[sum:jury_points:qk]' min='0' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#ecd7da</color>
+                <color>#e8bdc4</color>
+                <color>#e4a5af</color>
+                <color>#e08d9b</color>
+                <color>#dc7787</color>
+                <color>#d86074</color>
+                <color>#d44b61</color>
+                <color>#d0364f</color>
+                <color>#cc233e</color>
+                <color>#c8102e</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='admin-1-label-9th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-8th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-7th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-6th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-5th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-4th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-3rd-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-2nd-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-1st-tier' value='false' />
+            <format attr='enabled' id='us-admin-1-label-abbr-3rd-tier' value='false' />
+            <format attr='enabled' id='us-admin-1-label-abbr-2nd-tier' value='false' />
+            <format attr='enabled' id='us-admin-1-label-abbr-1st-tier' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-bg-sub' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-supress-bg' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-sm-parents-bg' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-md-parents-bg' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-lg-parents-bg' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-dispute-sub' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-sub' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-supress' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-sm-parents' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-md-parents' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-lg-parents' value='false' />
+            <format attr='enabled' id='admin1-water-lines-usa-tableau' value='false' />
+            <format attr='enabled' id='9-dash-line-casing' value='false' />
+            <format attr='enabled' id='9-dash-line' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.16o1nv406s85od18uk9900m3b6p2].[sum:jury_points:qk]' />
+              <lod column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]' />
+              <geometry column='[federated.16o1nv406s85od18uk9900m3b6p2].[Geometry (generated)]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run bold='true' fontalignment='1'><![CDATA[<[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]>]]></run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run fontalignment='1' fontcolor='#787878'>Received  </run>
+                <run bold='true' fontalignment='1'><![CDATA[<[federated.16o1nv406s85od18uk9900m3b6p2].[sum:jury_points:qk]> Jury Points from other countries this year.]]></run>
+                <run fontalignment='1'>Æ&#10;&#10;&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16o1nv406s85od18uk9900m3b6p2].[Latitude (generated)]</rows>
+        <cols>[federated.16o1nv406s85od18uk9900m3b6p2].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{E0986ED5-CB41-4E43-8E82-823B3B99C000}' />
+    </worksheet>
+    <worksheet name='top 5 avg received'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='votes_finalists' name='federated.16o1nv406s85od18uk9900m3b6p2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.16o1nv406s85od18uk9900m3b6p2'>
+            <column-instance column='[jury_points]' derivation='Avg' name='[avg:jury_points:qk]' pivot='key' type='quantitative' />
+            <column caption='Jury Points' datatype='integer' name='[jury_points]' role='measure' type='quantitative' />
+            <column-instance column='[to_country]' derivation='None' name='[none:to_country:nk]' pivot='key' type='nominal' />
+            <column caption='To Country' datatype='string' name='[to_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' included-values='in-range'>
+            <min>3.1600000000000001</min>
+          </filter>
+          <filter class='categorical' column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:to_country:nk]' />
+              <groupfilter function='member' level='[none:to_country:nk]' member='&quot;Serbia and montenegro&quot;' />
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]' direction='DESC' using='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' />
+          <slices>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]</column>
+            <column>[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='76' />
+            <format attr='text-format' field='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' value='n#,##0.0;-#,##0.0' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]' value='88' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' max='4.1363636363636367' min='0.5' num-steps='4' palette='green_blue_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' />
+              <text column='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='12' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{BB4493E8-116D-4D94-9F9A-0C9715FF62AA}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='votes_finalists' name='federated.16o1nv406s85od18uk9900m3b6p2' />
+      </datasources>
+      <datasource-dependencies datasource='federated.16o1nv406s85od18uk9900m3b6p2'>
+        <column caption='From Country' datatype='string' name='[from_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+        <column-instance column='[from_country]' derivation='None' name='[none:from_country:nk]' pivot='key' type='nominal' />
+        <column-instance column='[to_country]' derivation='None' name='[none:to_country:nk]' pivot='key' type='nominal' />
+        <column caption='To Country' datatype='string' name='[to_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+        <column caption='Year' datatype='date' name='[year]' role='dimension' type='ordinal' />
+        <column-instance column='[year]' derivation='Year' name='[yr:year:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97672' id='7' param='horz' type-v2='layout-flow' w='98792' x='604' y='1164'>
+            <zone h='97672' id='5' type-v2='layout-basic' w='77283' x='604' y='1164'>
+              <zone h='97672' id='3' name='map - votes given (Azerbaijan)' w='77283' x='604' y='1164'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='285' h='97672' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='21509' x='77887' y='1164'>
+              <zone h='7569' id='8' mode='checkdropdown' name='map - votes given (Azerbaijan)' param='[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]' type-v2='filter' w='21509' x='77887' y='1164'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7569' id='9' mode='dropdown' name='map - votes given (Azerbaijan)' param='[federated.16o1nv406s85od18uk9900m3b6p2].[none:from_country:nk]' type-v2='filter' w='21509' x='77887' y='8733'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7569' id='10' mode='dropdown' name='map - votes given (Azerbaijan)' param='[federated.16o1nv406s85od18uk9900m3b6p2].[yr:year:ok]' type-v2='filter' w='21509' x='77887' y='16302'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='9461' id='11' name='map - votes given (Azerbaijan)' pane-specification-id='0' param='[federated.16o1nv406s85od18uk9900m3b6p2].[sum:jury_points:qk]' type-v2='color' w='21509' x='77887' y='23871'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='410' h='60844' id='12' is-fixed='true' name='Azerbaijan - votes to (2019)' w='21509' x='77887' y='33332'>
+                <layout-cache fixed-size-w='198' type-h='fixed' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='850' minheight='850' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='16' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97672' id='15' param='vert' type-v2='layout-flow' w='98792' x='604' y='1164'>
+                <zone h='7569' id='8' mode='checkdropdown' name='map - votes given (Azerbaijan)' param='[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]' type-v2='filter' w='21509' x='77887' y='1164'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7569' id='9' mode='dropdown' name='map - votes given (Azerbaijan)' param='[federated.16o1nv406s85od18uk9900m3b6p2].[none:from_country:nk]' type-v2='filter' w='21509' x='77887' y='8733'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7569' id='10' mode='dropdown' name='map - votes given (Azerbaijan)' param='[federated.16o1nv406s85od18uk9900m3b6p2].[yr:year:ok]' type-v2='filter' w='21509' x='77887' y='16302'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='97672' id='3' is-fixed='true' name='map - votes given (Azerbaijan)' w='77283' x='604' y='1164'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9461' id='11' name='map - votes given (Azerbaijan)' pane-specification-id='0' param='[federated.16o1nv406s85od18uk9900m3b6p2].[sum:jury_points:qk]' type-v2='color' w='21509' x='77887' y='23871'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='60844' id='12' is-fixed='true' name='Azerbaijan - votes to (2019)' w='21509' x='77887' y='33332'>
+                  <layout-cache fixed-size-w='198' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{51AAA355-E849-4C72-9CE8-8BA6E7EAE0FB}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Denmark Dashboard'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='votes_finalists' name='federated.16o1nv406s85od18uk9900m3b6p2' />
+      </datasources>
+      <datasource-dependencies datasource='federated.16o1nv406s85od18uk9900m3b6p2'>
+        <column caption='From Country' datatype='string' name='[from_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+        <column-instance column='[from_country]' derivation='None' name='[none:from_country:nk]' pivot='key' type='nominal' />
+        <column-instance column='[to_country]' derivation='None' name='[none:to_country:nk]' pivot='key' type='nominal' />
+        <column caption='To Country' datatype='string' name='[to_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+        <column caption='Year' datatype='date' name='[year]' role='dimension' type='ordinal' />
+        <column-instance column='[year]' derivation='Year' name='[yr:year:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98228' id='7' param='horz' type-v2='layout-flow' w='99064' x='468' y='886'>
+            <zone h='98228' id='5' type-v2='layout-basic' w='84553' x='468' y='886'>
+              <zone h='98228' id='3' name='map - votes given (Denmark)' w='84553' x='468' y='886'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='248' h='98228' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='14511' x='85021' y='886'>
+              <zone h='5759' id='8' mode='dropdown' name='map - votes given (Denmark)' param='[federated.16o1nv406s85od18uk9900m3b6p2].[none:from_country:nk]' type-v2='filter' w='14511' x='85021' y='886'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5759' id='9' mode='checkdropdown' name='map - votes given (Denmark)' param='[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]' type-v2='filter' w='14511' x='85021' y='6645'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5759' id='10' mode='dropdown' name='map - votes given (Denmark)' param='[federated.16o1nv406s85od18uk9900m3b6p2].[yr:year:ok]' type-v2='filter' w='14511' x='85021' y='12404'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7198' id='11' name='map - votes given (Denmark)' pane-specification-id='0' param='[federated.16o1nv406s85od18uk9900m3b6p2].[sum:jury_points:qk]' type-v2='color' w='14511' x='85021' y='18163'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='399' h='45072' id='12' is-fixed='true' name='Denmark - votes to (2019)' w='14511' x='85021' y='25361'>
+                <layout-cache fixed-size-w='215' type-h='fixed' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='850' minheight='850' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='22' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97672' id='21' param='vert' type-v2='layout-flow' w='98792' x='604' y='1164'>
+                <zone h='7569' id='8' mode='dropdown' name='map - votes given (Denmark)' param='[federated.16o1nv406s85od18uk9900m3b6p2].[none:from_country:nk]' type-v2='filter' w='18717' x='80679' y='1164'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7569' id='9' mode='checkdropdown' name='map - votes given (Denmark)' param='[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]' type-v2='filter' w='18717' x='80679' y='8733'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7569' id='10' mode='dropdown' name='map - votes given (Denmark)' param='[federated.16o1nv406s85od18uk9900m3b6p2].[yr:year:ok]' type-v2='filter' w='18717' x='80679' y='16302'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='97672' id='3' is-fixed='true' name='map - votes given (Denmark)' w='80075' x='604' y='1164'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9461' id='11' name='map - votes given (Denmark)' pane-specification-id='0' param='[federated.16o1nv406s85od18uk9900m3b6p2].[sum:jury_points:qk]' type-v2='color' w='18717' x='80679' y='23871'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='59243' id='12' is-fixed='true' name='Denmark - votes to (2019)' w='18717' x='80679' y='33332'>
+                  <layout-cache fixed-size-w='215' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{7CEA058B-25A7-4357-AFB3-547BBE0E2092}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='map - votes given (Denmark)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.16o1nv406s85od18uk9900m3b6p2].[none:from_country:nk]' type='filter' />
+            <card mode='checkdropdown' param='[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]' type='filter' />
+            <card mode='dropdown' param='[federated.16o1nv406s85od18uk9900m3b6p2].[yr:year:ok]' type='filter' />
+            <card pane-specification-id='0' param='[federated.16o1nv406s85od18uk9900m3b6p2].[sum:jury_points:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A8DF491C-A500-4332-82A5-43B08EF6943B}' />
+    </window>
+    <window class='worksheet' name='Denmark - votes to (2019)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.16o1nv406s85od18uk9900m3b6p2].[sum:jury_points:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AE8C0224-CD68-46FC-B0E7-0BDD7E661FB5}' />
+    </window>
+    <window class='worksheet' name='Top 10 votes - Denmark'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.16o1nv406s85od18uk9900m3b6p2].[none:year:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card mode='dropdown' param='[federated.16o1nv406s85od18uk9900m3b6p2].[none:from_country:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DBE6905A-AD69-4289-A232-4A99C616BDCE}' />
+    </window>
+    <window class='worksheet' name='map - votes given (Azerbaijan)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]' type='filter' />
+            <card mode='dropdown' param='[federated.16o1nv406s85od18uk9900m3b6p2].[none:from_country:nk]' type='filter' />
+            <card mode='dropdown' param='[federated.16o1nv406s85od18uk9900m3b6p2].[yr:year:ok]' type='filter' />
+            <card pane-specification-id='0' param='[federated.16o1nv406s85od18uk9900m3b6p2].[sum:jury_points:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{74D759BB-93AB-40EE-AB5B-17FB5E84A7EB}' />
+    </window>
+    <window class='worksheet' name='Azerbaijan - votes to (2019)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.16o1nv406s85od18uk9900m3b6p2].[sum:jury_points:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5D2E54A4-AB27-4FC8-A420-C1EC8B90199C}' />
+    </window>
+    <window class='worksheet' name='Top 10 votes - Azerbaijan'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.16o1nv406s85od18uk9900m3b6p2].[none:year:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card mode='dropdown' param='[federated.16o1nv406s85od18uk9900m3b6p2].[none:from_country:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{01E1052C-D415-4FB0-9CB4-F2494CA49D8E}' />
+    </window>
+    <window class='worksheet' name='(X) top 10 Votes to table'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.16o1nv406s85od18uk9900m3b6p2].[yr:year:ok]' type='filter' />
+            <card mode='dropdown' param='[federated.16o1nv406s85od18uk9900m3b6p2].[none:from_country:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{49471E98-804D-4DC0-ADFA-E55989EA295E}' />
+    </window>
+    <window class='worksheet' name='(X) table - votes from'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.16o1nv406s85od18uk9900m3b6p2].[yr:year:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{765A79C3-E11B-46F4-B976-16EBC99681ED}' />
+    </window>
+    <window class='worksheet' name='(X) heatmap vote distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.16o1nv406s85od18uk9900m3b6p2].[sum:jury_points:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2B9384FA-91BD-4DA8-AC89-4D2BA862218D}' />
+    </window>
+    <window class='worksheet' name='(X) votes to finland'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{12E9D788-612E-4402-90DF-E78991ED93E6}' />
+    </window>
+    <window class='worksheet' name='(X) prediction'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.16o1nv406s85od18uk9900m3b6p2].[none:year:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card mode='dropdown' param='[federated.16o1nv406s85od18uk9900m3b6p2].[none:to_country:nk]' type='filter' />
+            <card mode='dropdown' param='[federated.16o1nv406s85od18uk9900m3b6p2].[none:from_country:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.16o1nv406s85od18uk9900m3b6p2].[none:Forecast Indicator:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{348B4646-735B-4C6B-939D-A25E9DDFB5D1}' />
+    </window>
+    <window class='worksheet' name='finland-sweden prediction'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.16o1nv406s85od18uk9900m3b6p2].[none:Forecast Indicator:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{950B55B3-83DE-4F70-8D96-8D85E3276C5B}' />
+    </window>
+    <window class='worksheet' name='Map avg points received'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{57005463-80CA-4B13-B9E1-47B526B6986F}' />
+    </window>
+    <window class='worksheet' name='top 5 avg received'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9FC44898-CEEA-434E-98D3-6076E1EC8443}' />
+    </window>
+    <window class='worksheet' maximized='true' name='bot 5 avg received'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.16o1nv406s85od18uk9900m3b6p2].[avg:jury_points:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CC8F9114-C5B2-48DD-9F42-0520FA4C9E86}' />
+    </window>
+    <window class='worksheet' name='Sheet 17'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3B0809E2-6CF0-4823-B33E-975F8522E49F}' />
+    </window>
+    <window class='dashboard' name='Denmark Dashboard'>
+      <viewpoints>
+        <viewpoint name='Denmark - votes to (2019)' />
+        <viewpoint name='map - votes given (Denmark)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='6' />
+      <simple-id uuid='{B8B06B33-07E6-4306-923F-B2F4F4EF8159}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Azerbaijan - votes to (2019)' />
+        <viewpoint name='map - votes given (Azerbaijan)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{FDCAA22B-5FA5-42FB-9E30-14C94494323A}' />
+    </window>
+  </windows>
+</workbook>
