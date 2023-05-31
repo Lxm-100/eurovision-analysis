@@ -36555,7 +36555,7 @@ year,round,from_country_id,to_country_id,from_country,to_country,total_points,te
 2023-05-01,final,CH,AL,Switzerland,Albania,12,12,0
 2023-05-01,final,UA,AL,Ukraine,Albania,0,0,0
 2023-05-01,final,GB,AL,United Kingdom,Albania,0,0,0
-2023-05-01,final,,AL,Rest of the world,Albania,6,6,0
+2023-05-01,final,EU,AL,Rest of the world,Albania,6,6,0
 2023-05-01,final,AL,AM,Albania,Armenia,10,0,10
 2023-05-01,final,AM,AM,Armenia,Armenia,0,0,0
 2023-05-01,final,AU,AM,Australia,Armenia,0,0,0
@@ -36593,7 +36593,7 @@ year,round,from_country_id,to_country_id,from_country,to_country,total_points,te
 2023-05-01,final,CH,AM,Switzerland,Armenia,5,0,5
 2023-05-01,final,UA,AM,Ukraine,Armenia,0,0,0
 2023-05-01,final,GB,AM,United Kingdom,Armenia,3,0,3
-2023-05-01,final,,AM,Rest of the world,Armenia,8,8,0
+2023-05-01,final,EU,AM,Rest of the world,Armenia,8,8,0
 2023-05-01,final,AL,AU,Albania,Australia,6,3,3
 2023-05-01,final,AM,AU,Armenia,Australia,0,0,0
 2023-05-01,final,AU,AU,Australia,Australia,0,0,0
@@ -36631,7 +36631,7 @@ year,round,from_country_id,to_country_id,from_country,to_country,total_points,te
 2023-05-01,final,CH,AU,Switzerland,Australia,2,0,2
 2023-05-01,final,UA,AU,Ukraine,Australia,8,0,8
 2023-05-01,final,GB,AU,United Kingdom,Australia,12,2,10
-2023-05-01,final,,AU,Rest of the world,Australia,0,0,0
+2023-05-01,final,EU,AU,Rest of the world,Australia,0,0,0
 2023-05-01,final,AL,AT,Albania,Austria,0,0,0
 2023-05-01,final,AM,AT,Armenia,Austria,2,0,2
 2023-05-01,final,AU,AT,Australia,Austria,13,7,6
@@ -36669,7 +36669,7 @@ year,round,from_country_id,to_country_id,from_country,to_country,total_points,te
 2023-05-01,final,CH,AT,Switzerland,Austria,7,0,7
 2023-05-01,final,UA,AT,Ukraine,Austria,0,0,0
 2023-05-01,final,GB,AT,United Kingdom,Austria,0,0,0
-2023-05-01,final,,AT,Rest of the world,Austria,0,0,0
+2023-05-01,final,EU,AT,Rest of the world,Austria,0,0,0
 2023-05-01,final,AL,BE,Albania,Belgium,5,0,5
 2023-05-01,final,AM,BE,Armenia,Belgium,0,0,0
 2023-05-01,final,AU,BE,Australia,Belgium,15,3,12
@@ -36707,7 +36707,7 @@ year,round,from_country_id,to_country_id,from_country,to_country,total_points,te
 2023-05-01,final,CH,BE,Switzerland,Belgium,0,0,0
 2023-05-01,final,UA,BE,Ukraine,Belgium,0,0,0
 2023-05-01,final,GB,BE,United Kingdom,Belgium,13,6,7
-2023-05-01,final,,BE,Rest of the world,Belgium,0,0,0
+2023-05-01,final,EU,BE,Rest of the world,Belgium,0,0,0
 2023-05-01,final,AL,HR,Albania,Croatia,8,8,0
 2023-05-01,final,AM,HR,Armenia,Croatia,0,0,0
 2023-05-01,final,AU,HR,Australia,Croatia,4,4,0
@@ -36745,7 +36745,7 @@ year,round,from_country_id,to_country_id,from_country,to_country,total_points,te
 2023-05-01,final,CH,HR,Switzerland,Croatia,6,6,0
 2023-05-01,final,UA,HR,Ukraine,Croatia,8,8,0
 2023-05-01,final,GB,HR,United Kingdom,Croatia,0,0,0
-2023-05-01,final,,HR,Rest of the world,Croatia,3,3,0
+2023-05-01,final,EU,HR,Rest of the world,Croatia,3,3,0
 2023-05-01,final,AL,CY,Albania,Cyprus,11,7,4
 2023-05-01,final,AM,CY,Armenia,Cyprus,13,8,5
 2023-05-01,final,AU,CY,Australia,Cyprus,11,8,3
@@ -36783,7 +36783,7 @@ year,round,from_country_id,to_country_id,from_country,to_country,total_points,te
 2023-05-01,final,CH,CY,Switzerland,Cyprus,0,0,0
 2023-05-01,final,UA,CY,Ukraine,Cyprus,0,0,0
 2023-05-01,final,GB,CY,United Kingdom,Cyprus,0,0,0
-2023-05-01,final,,CY,Rest of the world,Cyprus,0,0,0
+2023-05-01,final,EU,CY,Rest of the world,Cyprus,0,0,0
 2023-05-01,final,AL,CZ,Albania,Czechia,0,0,0
 2023-05-01,final,AM,CZ,Armenia,Czechia,0,0,0
 2023-05-01,final,AU,CZ,Australia,Czechia,0,0,0
@@ -36821,7 +36821,7 @@ year,round,from_country_id,to_country_id,from_country,to_country,total_points,te
 2023-05-01,final,CH,CZ,Switzerland,Czechia,12,0,12
 2023-05-01,final,UA,CZ,Ukraine,Czechia,9,2,7
 2023-05-01,final,GB,CZ,United Kingdom,Czechia,0,0,0
-2023-05-01,final,,CZ,Rest of the world,Czechia,0,0,0
+2023-05-01,final,EU,CZ,Rest of the world,Czechia,0,0,0
 2023-05-01,final,AL,EE,Albania,Estonia,8,0,8
 2023-05-01,final,AM,EE,Armenia,Estonia,0,0,0
 2023-05-01,final,AU,EE,Australia,Estonia,8,0,8
@@ -36859,7 +36859,7 @@ year,round,from_country_id,to_country_id,from_country,to_country,total_points,te
 2023-05-01,final,CH,EE,Switzerland,Estonia,10,0,10
 2023-05-01,final,UA,EE,Ukraine,Estonia,5,0,5
 2023-05-01,final,GB,EE,United Kingdom,Estonia,6,0,6
-2023-05-01,final,,EE,Rest of the world,Estonia,0,0,0
+2023-05-01,final,EU,EE,Rest of the world,Estonia,0,0,0
 2023-05-01,final,AL,FI,Albania,Finland,6,6,0
 2023-05-01,final,AM,FI,Armenia,Finland,14,6,8
 2023-05-01,final,AU,FI,Australia,Finland,17,12,5
@@ -36897,7 +36897,7 @@ year,round,from_country_id,to_country_id,from_country,to_country,total_points,te
 2023-05-01,final,CH,FI,Switzerland,Finland,8,8,0
 2023-05-01,final,UA,FI,Ukraine,Finland,10,10,0
 2023-05-01,final,GB,FI,United Kingdom,Finland,12,12,0
-2023-05-01,final,,FI,Rest of the world,Finland,10,10,0
+2023-05-01,final,EU,FI,Rest of the world,Finland,10,10,0
 2023-05-01,final,AL,FR,Albania,France,3,3,0
 2023-05-01,final,AM,FR,Armenia,France,17,10,7
 2023-05-01,final,AU,FR,Australia,France,2,2,0
@@ -36935,7 +36935,7 @@ year,round,from_country_id,to_country_id,from_country,to_country,total_points,te
 2023-05-01,final,CH,FR,Switzerland,France,0,0,0
 2023-05-01,final,UA,FR,Ukraine,France,0,0,0
 2023-05-01,final,GB,FR,United Kingdom,France,0,0,0
-2023-05-01,final,,FR,Rest of the world,France,1,1,0
+2023-05-01,final,EU,FR,Rest of the world,France,1,1,0
 2023-05-01,final,AL,DE,Albania,Germany,0,0,0
 2023-05-01,final,AM,DE,Armenia,Germany,0,0,0
 2023-05-01,final,AU,DE,Australia,Germany,0,0,0
@@ -36973,7 +36973,7 @@ year,round,from_country_id,to_country_id,from_country,to_country,total_points,te
 2023-05-01,final,CH,DE,Switzerland,Germany,0,0,0
 2023-05-01,final,UA,DE,Ukraine,Germany,5,5,0
 2023-05-01,final,GB,DE,United Kingdom,Germany,0,0,0
-2023-05-01,final,,DE,Rest of the world,Germany,0,0,0
+2023-05-01,final,EU,DE,Rest of the world,Germany,0,0,0
 2023-05-01,final,AL,IL,Albania,Israel,11,5,6
 2023-05-01,final,AM,IL,Armenia,Israel,24,12,12
 2023-05-01,final,AU,IL,Australia,Israel,5,5,0
@@ -37011,7 +37011,7 @@ year,round,from_country_id,to_country_id,from_country,to_country,total_points,te
 2023-05-01,final,CH,IL,Switzerland,Israel,4,3,1
 2023-05-01,final,UA,IL,Ukraine,Israel,2,1,1
 2023-05-01,final,GB,IL,United Kingdom,Israel,7,3,4
-2023-05-01,final,,IL,Rest of the world,Israel,12,12,0
+2023-05-01,final,EU,IL,Rest of the world,Israel,12,12,0
 2023-05-01,final,AL,IT,Albania,Italy,14,12,2
 2023-05-01,final,AM,IT,Armenia,Italy,3,3,0
 2023-05-01,final,AU,IT,Australia,Italy,1,0,1
@@ -37049,7 +37049,7 @@ year,round,from_country_id,to_country_id,from_country,to_country,total_points,te
 2023-05-01,final,CH,IT,Switzerland,Italy,18,10,8
 2023-05-01,final,UA,IT,Ukraine,Italy,2,0,2
 2023-05-01,final,GB,IT,United Kingdom,Italy,2,0,2
-2023-05-01,final,,IT,Rest of the world,Italy,0,0,0
+2023-05-01,final,EU,IT,Rest of the world,Italy,0,0,0
 2023-05-01,final,AL,LT,Albania,Lithuania,0,0,0
 2023-05-01,final,AM,LT,Armenia,Lithuania,0,0,0
 2023-05-01,final,AU,LT,Australia,Lithuania,10,0,10
@@ -37087,7 +37087,7 @@ year,round,from_country_id,to_country_id,from_country,to_country,total_points,te
 2023-05-01,final,CH,LT,Switzerland,Lithuania,0,0,0
 2023-05-01,final,UA,LT,Ukraine,Lithuania,14,4,10
 2023-05-01,final,GB,LT,United Kingdom,Lithuania,18,10,8
-2023-05-01,final,,LT,Rest of the world,Lithuania,0,0,0
+2023-05-01,final,EU,LT,Rest of the world,Lithuania,0,0,0
 2023-05-01,final,AL,MD,Albania,Moldova,0,0,0
 2023-05-01,final,AM,MD,Armenia,Moldova,0,0,0
 2023-05-01,final,AU,MD,Australia,Moldova,0,0,0
@@ -37125,7 +37125,7 @@ year,round,from_country_id,to_country_id,from_country,to_country,total_points,te
 2023-05-01,final,CH,MD,Switzerland,Moldova,0,0,0
 2023-05-01,final,UA,MD,Ukraine,Moldova,6,6,0
 2023-05-01,final,GB,MD,United Kingdom,Moldova,1,1,0
-2023-05-01,final,,MD,Rest of the world,Moldova,0,0,0
+2023-05-01,final,EU,MD,Rest of the world,Moldova,0,0,0
 2023-05-01,final,AL,NO,Albania,Norway,4,4,0
 2023-05-01,final,AM,NO,Armenia,Norway,8,4,4
 2023-05-01,final,AU,NO,Australia,Norway,6,6,0
@@ -37163,7 +37163,7 @@ year,round,from_country_id,to_country_id,from_country,to_country,total_points,te
 2023-05-01,final,CH,NO,Switzerland,Norway,6,2,4
 2023-05-01,final,UA,NO,Ukraine,Norway,7,7,0
 2023-05-01,final,GB,NO,United Kingdom,Norway,7,7,0
-2023-05-01,final,,NO,Rest of the world,Norway,4,4,0
+2023-05-01,final,EU,NO,Rest of the world,Norway,4,4,0
 2023-05-01,final,AL,PL,Albania,Poland,1,1,0
 2023-05-01,final,AM,PL,Armenia,Poland,6,5,1
 2023-05-01,final,AU,PL,Australia,Poland,0,0,0
@@ -37201,7 +37201,7 @@ year,round,from_country_id,to_country_id,from_country,to_country,total_points,te
 2023-05-01,final,CH,PL,Switzerland,Poland,0,0,0
 2023-05-01,final,UA,PL,Ukraine,Poland,18,12,6
 2023-05-01,final,GB,PL,United Kingdom,Poland,8,8,0
-2023-05-01,final,,PL,Rest of the world,Poland,0,0,0
+2023-05-01,final,EU,PL,Rest of the world,Poland,0,0,0
 2023-05-01,final,AL,PT,Albania,Portugal,0,0,0
 2023-05-01,final,AM,PT,Armenia,Portugal,0,0,0
 2023-05-01,final,AU,PT,Australia,Portugal,2,0,2
@@ -37239,7 +37239,7 @@ year,round,from_country_id,to_country_id,from_country,to_country,total_points,te
 2023-05-01,final,CH,PT,Switzerland,Portugal,7,7,0
 2023-05-01,final,UA,PT,Ukraine,Portugal,0,0,0
 2023-05-01,final,GB,PT,United Kingdom,Portugal,0,0,0
-2023-05-01,final,,PT,Rest of the world,Portugal,0,0,0
+2023-05-01,final,EU,PT,Rest of the world,Portugal,0,0,0
 2023-05-01,final,AL,RS,Albania,Serbia,0,0,0
 2023-05-01,final,AM,RS,Armenia,Serbia,0,0,0
 2023-05-01,final,AU,RS,Australia,Serbia,0,0,0
@@ -37277,7 +37277,7 @@ year,round,from_country_id,to_country_id,from_country,to_country,total_points,te
 2023-05-01,final,CH,RS,Switzerland,Serbia,1,1,0
 2023-05-01,final,UA,RS,Ukraine,Serbia,0,0,0
 2023-05-01,final,GB,RS,United Kingdom,Serbia,0,0,0
-2023-05-01,final,,RS,Rest of the world,Serbia,0,0,0
+2023-05-01,final,EU,RS,Rest of the world,Serbia,0,0,0
 2023-05-01,final,AL,SI,Albania,Slovenia,2,2,0
 2023-05-01,final,AM,SI,Armenia,Slovenia,0,0,0
 2023-05-01,final,AU,SI,Australia,Slovenia,1,1,0
@@ -37315,7 +37315,7 @@ year,round,from_country_id,to_country_id,from_country,to_country,total_points,te
 2023-05-01,final,CH,SI,Switzerland,Slovenia,0,0,0
 2023-05-01,final,UA,SI,Ukraine,Slovenia,3,0,3
 2023-05-01,final,GB,SI,United Kingdom,Slovenia,1,0,1
-2023-05-01,final,,SI,Rest of the world,Slovenia,0,0,0
+2023-05-01,final,EU,SI,Rest of the world,Slovenia,0,0,0
 2023-05-01,final,AL,ES,Albania,Spain,1,0,1
 2023-05-01,final,AM,ES,Armenia,Spain,6,0,6
 2023-05-01,final,AU,ES,Australia,Spain,4,0,4
@@ -37353,7 +37353,7 @@ year,round,from_country_id,to_country_id,from_country,to_country,total_points,te
 2023-05-01,final,CH,ES,Switzerland,Spain,3,0,3
 2023-05-01,final,UA,ES,Ukraine,Spain,0,0,0
 2023-05-01,final,GB,ES,United Kingdom,Spain,5,0,5
-2023-05-01,final,,ES,Rest of the world,Spain,4,2,2
+2023-05-01,final,EU,ES,Rest of the world,Spain,4,2,2
 2023-05-01,final,AL,SE,Albania,Sweden,22,10,12
 2023-05-01,final,AM,SE,Armenia,Sweden,17,7,10
 2023-05-01,final,AU,SE,Australia,Sweden,17,10,7
@@ -37365,7 +37365,7 @@ year,round,from_country_id,to_country_id,from_country,to_country,total_points,te
 2023-05-01,final,CZ,SE,Czechia,Sweden,16,6,10
 2023-05-01,final,DK,SE,Denmark,Sweden,20,8,12
 2023-05-01,final,EE,SE,Estonia,Sweden,22,10,12
-2023-05-01,final,FI,SE,Finland,Sweden,12,0,12
+2023-05-01,final,FI,SE,Finland,Sweden,24,12,12
 2023-05-01,final,FR,SE,France,Sweden,9,3,6
 2023-05-01,final,GE,SE,Georgia,Sweden,11,7,4
 2023-05-01,final,DE,SE,Germany,Sweden,13,1,12
@@ -37391,7 +37391,7 @@ year,round,from_country_id,to_country_id,from_country,to_country,total_points,te
 2023-05-01,final,CH,SE,Switzerland,Sweden,11,5,6
 2023-05-01,final,UA,SE,Ukraine,Sweden,15,3,12
 2023-05-01,final,GB,SE,United Kingdom,Sweden,17,5,12
-2023-05-01,final,,SE,Rest of the world,Sweden,7,7,0
+2023-05-01,final,EU,SE,Rest of the world,Sweden,7,7,0
 2023-05-01,final,AL,CH,Albania,Switzerland,7,0,7
 2023-05-01,final,AM,CH,Armenia,Switzerland,2,2,0
 2023-05-01,final,AU,CH,Australia,Switzerland,0,0,0
@@ -37429,7 +37429,7 @@ year,round,from_country_id,to_country_id,from_country,to_country,total_points,te
 2023-05-01,final,CH,CH,Switzerland,Switzerland,0,0,0
 2023-05-01,final,UA,CH,Ukraine,Switzerland,0,0,0
 2023-05-01,final,GB,CH,United Kingdom,Switzerland,0,0,0
-2023-05-01,final,,CH,Rest of the world,Switzerland,0,0,0
+2023-05-01,final,EU,CH,Rest of the world,Switzerland,0,0,0
 2023-05-01,final,AL,UA,Albania,Ukraine,0,0,0
 2023-05-01,final,AM,UA,Armenia,Ukraine,4,1,3
 2023-05-01,final,AU,UA,Australia,Ukraine,0,0,0
@@ -37467,7 +37467,7 @@ year,round,from_country_id,to_country_id,from_country,to_country,total_points,te
 2023-05-01,final,CH,UA,Switzerland,Ukraine,0,0,0
 2023-05-01,final,UA,UA,Ukraine,Ukraine,0,0,0
 2023-05-01,final,GB,UA,United Kingdom,Ukraine,4,4,0
-2023-05-01,final,,UA,Rest of the world,Ukraine,5,5,0
+2023-05-01,final,EU,UA,Rest of the world,Ukraine,5,5,0
 2023-05-01,final,AL,GB,Albania,United Kingdom,0,0,0
 2023-05-01,final,AM,GB,Armenia,United Kingdom,0,0,0
 2023-05-01,final,AU,GB,Australia,United Kingdom,0,0,0
@@ -37505,4 +37505,4 @@ year,round,from_country_id,to_country_id,from_country,to_country,total_points,te
 2023-05-01,final,CH,GB,Switzerland,United Kingdom,0,0,0
 2023-05-01,final,UA,GB,Ukraine,United Kingdom,9,5,4
 2023-05-01,final,GB,GB,United Kingdom,United Kingdom,0,0,0
-2023-05-01,final,,GB,Rest of the world,United Kingdom,0,0,0
+2023-05-01,final,EU,GB,Rest of the world,United Kingdom,0,0,0
