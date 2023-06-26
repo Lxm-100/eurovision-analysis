@@ -11,19 +11,16 @@ This project analyzes voting data of the Eurovision Song Contest based on geogra
 
 ## Data description
 
+column  | description
+------------- | -------------
+year  | contest year
+round  | final, semi-final
+from_country_id  | country id of the country giving points
+to_country_id  | country id of the country receiving points
+from_country  | country name of the country giving points
+to_country  | country name of the country receiving points
+total_points  | total number of points given
+tele_points  | number of points given in tele-voting
+jury_points  | number of points given by jury
 
-year	round
 
-from_country_id
-
-to_country_id
-
-from_country
-
-to_country
-
-total_points
-
-tele_points
-
-jury_points
